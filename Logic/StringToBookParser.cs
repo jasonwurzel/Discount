@@ -14,7 +14,7 @@ public class StringToBookParser : IStringToBookParser
 
     public IBook Parse(string bookString)
     {
-        if (Enum.TryParse<PossibleBookTitles>(bookString, out var result))
+        if (Enum.TryParse<BookTitle>(bookString, out var result))
         {
             return _bookFactory.CreateBook(result);
         }

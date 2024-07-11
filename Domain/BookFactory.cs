@@ -4,7 +4,7 @@ namespace Domain;
 
 public class BookFactory : IBookFactory
 {
-    public IBook CreateBook(PossibleBookTitles title)
+    public IBook CreateBook(BookTitle title)
     {
         return new Book(title);
     }

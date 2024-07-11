@@ -11,7 +11,7 @@ namespace Logic
 
         public string PrintAll()
         {
-            return string.Join(", ", Enum.GetNames<PossibleBookTitles>());
+            return string.Join(", ", Enum.GetNames<BookTitle>());
         }
     }
 }

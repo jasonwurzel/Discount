@@ -2,5 +2,9 @@
 
 public interface IBookSetCalculator
 {
-    decimal Calculate(IBook[] books);
+    decimal Calculate(List<IBook> books);
+
+    decimal Calculate(List<IBookSet> bookSets);
+
+    decimal Calculate(IBookSet bookSet);
 }

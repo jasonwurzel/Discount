@@ -2,5 +2,5 @@
 
 public interface IBookFactory
 {
-    IBook CreateBook(PossibleBookTitles title);
+    IBook CreateBook(BookTitle title);
 }

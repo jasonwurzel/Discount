@@ -2,5 +2,5 @@
 
 public interface IBook
 {
-    PossibleBookTitles Title { get; }
+    BookTitle Title { get; }
 }
