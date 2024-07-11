@@ -115,5 +115,4 @@ public class BookSetCalculatorTests
         // Assert
         result.Should().Be(30m);
     }
-
 }

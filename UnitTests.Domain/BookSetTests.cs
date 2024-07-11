@@ -2,10 +2,10 @@
 using Domain;
 using FluentAssertions;
 using Logic;
-using UnitTests.Logic.Mocks;
+using UnitTests.Domain.Mocks;
 using Xunit;
 
-namespace UnitTests.Logic;
+namespace UnitTests.Domain;
 
 public class BookSetTests
 {
