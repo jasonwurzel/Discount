@@ -11,6 +11,13 @@ public class BookSetCalculator : IBookSetCalculator
     {
         decimal result = 0m;
 
+        /*
+        idea for more real world implementation (e.g. working with the actual book instances instead of only instances for traceability (which book costs what, etc.)):
+        instead of having int[] bookCountsByTitle = new int[5];
+        use: List<List<IBook>> or similar and add the actual books instead of counting ++ and --
+        thus we can later on create real "BookSet" instances
+         */
+
         // count all books from all titles
         int[] bookCountsByTitle = new int[5];
         var allPossibleTitles = BookTitles.All;
