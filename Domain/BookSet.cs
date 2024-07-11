@@ -15,10 +15,16 @@ public class BookSet : IBookSet
     public IReadOnlyCollection<IBook> Books => _books;
 
     public bool IsFull => _books.Count == BookTitles.All.Length;
+    public bool IsEmpty => !_books.Any();
 
     public decimal GetPrice()
     {
         return _bookSetCalculator.Calculate(this);
+    }
+
+    public void AddBook(IBook book)
+    {
+        _books.Add(book);
     }
 
     public bool TryAddBook(IBook book)
