@@ -2,6 +2,7 @@
 using Domain;
 using FluentAssertions;
 using Logic;
+using UnitTests.Logic.Mocks;
 using Xunit;
 
 namespace UnitTests.Logic;
@@ -115,14 +116,4 @@ public class BookSetCalculatorTests
         result.Should().Be(30m);
     }
 
-}
-
-public class DummyBook : IBook
-{
-    public DummyBook(BookTitle title)
-    {
-        Title = title;
-    }
-
-    public BookTitle Title { get; }
 }

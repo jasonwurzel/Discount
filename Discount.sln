@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscountCLI", "DiscountCLI\DiscountCLI.csproj", "{C5EDFDF0-1A45-44EC-9586-2B89D3CC2E63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountCLI", "DiscountCLI\DiscountCLI.csproj", "{C5EDFDF0-1A45-44EC-9586-2B89D3CC2E63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{B1C305AA-9BE6-4E0C-A541-CC50C333717E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{B1C305AA-9BE6-4E0C-A541-CC50C333717E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6C1D87D0-5191-4721-97A8-2EAF50C30AD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Logic", "UnitTests.Logic\UnitTests.Logic.csproj", "{84C179C2-03B4-4E24-91AF-43DDFB3063B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests.Logic", "UnitTests.Logic\UnitTests.Logic.csproj", "{84C179C2-03B4-4E24-91AF-43DDFB3063B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{4E0FBA63-E38E-43D7-B090-04DF006310DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{4E0FBA63-E38E-43D7-B090-04DF006310DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstractions", "Abstractions\Abstractions.csproj", "{2C60992E-D93C-4B20-9C99-D7481CB5FBDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstractions", "Abstractions\Abstractions.csproj", "{2C60992E-D93C-4B20-9C99-D7481CB5FBDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests.Domain", "UnitTests.Domain\UnitTests.Domain.csproj", "{2247BABA-1AB9-4038-9335-444091D959D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +43,17 @@ Global
 		{2C60992E-D93C-4B20-9C99-D7481CB5FBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C60992E-D93C-4B20-9C99-D7481CB5FBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C60992E-D93C-4B20-9C99-D7481CB5FBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2247BABA-1AB9-4038-9335-444091D959D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2247BABA-1AB9-4038-9335-444091D959D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2247BABA-1AB9-4038-9335-444091D959D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2247BABA-1AB9-4038-9335-444091D959D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{84C179C2-03B4-4E24-91AF-43DDFB3063B5} = {6C1D87D0-5191-4721-97A8-2EAF50C30AD1}
+		{2247BABA-1AB9-4038-9335-444091D959D4} = {6C1D87D0-5191-4721-97A8-2EAF50C30AD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A7DDE007-0191-477F-B3C4-DFF0839E56B5}

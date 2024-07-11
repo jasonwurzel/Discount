@@ -2,6 +2,7 @@
 using Domain;
 using FluentAssertions;
 using Logic;
+using UnitTests.Logic.Mocks;
 using Xunit;
 
 namespace UnitTests.Logic;
@@ -46,25 +47,5 @@ public class BookSetTests
         sut.TryAddBook(book2).Should().BeTrue();
 
         sut.GetPrice().Should().Be(15.2m);
-    }
-
-
-}
-
-public class DummyBookSetCalculator : IBookSetCalculator
-{
-    public decimal Calculate(List<IBook> books)
-    {
-        return 0;
-    }
-
-    public decimal Calculate(List<IBookSet> bookSets)
-    {
-        return 0;
-    }
-
-    public decimal Calculate(IBookSet bookSet)
-    {
-        return 0;
     }
 }

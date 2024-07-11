@@ -14,6 +14,9 @@ public class ShoppingCart : IShoppingCart
     {
         _bookSetCalculator = bookSetCalculator;
     }
+
+    public IReadOnlyCollection<IBook> Books => _books;
+
     public void AddBook(IBook book)
     {
         _books.Add(book);
